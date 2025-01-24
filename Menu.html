@@ -1,0 +1,149 @@
+﻿
+<center>
+<style>
+.body {
+		background-color:rgba(300,80,0,0.3);
+		opacity: 0.9;
+		border-radius: 5px;
+		height=80px;
+		background-image:linear-gradient(darkblue,purple);
+		#box-shadow: 0 3px 2px rgba(0,0,0,0.4);
+		background-size: cover;
+	}
+ input[type=submit],input[type=button] {
+  			background-image:linear-gradient(to right,darkblue,purple,yellow);
+  			border: none;
+  			color: fff;
+  			padding: 4px 5px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 18px;
+  			margin: 4px 3px;
+  			cursor: pointer;
+ 			border-radius: 12px;
+ 			width:130px;
+ 			font-weight:bold;
+}
+th{
+		color:fff;
+		font-weight:bold;
+		padding:6px;
+		font-size:1.4rem;
+		 text-align: none;
+}
+ h1
+{
+	color:fff;
+	font-size: 2rem;
+	font-weight:bold;
+	padding:7px;
+	#border-bottom:2px solid  rgba(255,255,255,0.5);
+	box-shadow: 0 10px 13px rgba(0,0,0,0.5);
+	background-image:linear-gradient(to right,darkblue,purple);
+	border-radius:15px;
+	margin:5px
+}
+.form {
+		
+		opacity: 0.9;
+		border-radius: 5px;
+		height=30px;
+		width:370px;
+		background-image:linear-gradient(#100099,#0CAAbA);		
+ 		display:flex;
+ 	flex-direction:column;
+ 	align-items:center;
+ 	margin:auto;
+ 	margin-top:5px;
+	box-shadow: 0 12px 13px rgba(0,0,100,0.6);
+ 	
+ 	border-radius:20px;
+}
+</style>
+<center>
+<form name=f class="form">
+<body class="body"><h1>School Managment system</h1>
+<table border=0 cellpadding=6 cellspacing=4>
+<tr>
+<th>Attendance</th> 
+<th><input type=button value=Open onclick=attendance_open()></th>
+</tr>
+<tr>
+<th>Classroom</th> 
+<th><input type=button value=Open onclick=classroom_open()></th>
+</tr>
+<tr>
+<th>Class room student</th> 
+<th><input type=button value=Open onclick=classroomstudent_open()></th>
+</tr>
+<tr>
+<th>Course</th> 
+<th><input type=button value=Open onclick=course_open()></th>
+</tr>
+<tr>
+<th>Exam</th> 
+<th><input type=button value=Open onclick=exam_open()></th>
+</tr>
+<tr>
+<th>Exam result</th> 
+<th><input type=button value=Open onclick=examresult_open()></th>
+</tr>
+<tr>
+<th>Exam type</th> 
+<th><input type=button value=Open onclick=examtype_open()></th>
+</tr>
+<tr>
+<th>Grade</th> 
+<th><input type=button value=Open onclick=grade_open()></th>
+</tr>
+<tr>
+<th>Parent</th> 
+<th><input type=button value=Open onclick=parent_open()></th>
+</tr>
+<tr>
+<th>Student</th> 
+<th><input type=button value=Open onclick=student_open()></th>
+</tr>
+<tr>
+<th>Teacher</th> 
+<th><input type=button value=Open onclick=teacher_open()></th>
+</tr>
+</table>
+</body>
+</form>
+<script>
+    function attendance_open() {
+        window.open("Attendance.aspx", "_self")
+    }
+    function classroom_open() {
+        window.open("Classroom.aspx", "_self")
+    }
+    function classroomstudent_open() {
+        window.open("classroomstudent.aspx", "_self")
+    }
+    function course_open() {
+        window.open("course.aspx", "_self")
+    }
+    function exam_open() {
+        window.open("exam.aspx", "_self")
+    }
+    function examresult_open() {
+        window.open("examResult.aspx", "_self")
+    }
+    function examtype_open() {
+        window.open("ExamType.aspx", "_self")
+    }
+    function grade_open() {
+        window.open("grade.aspx", "_self")
+    }
+    function parent_open() {
+        window.open("parent.aspx", "_self")
+    }
+    function student_open() {
+        window.open("student.aspx", "_self")
+    }
+    function teacher_open() {
+        window.open("teacher.aspx", "_self")
+    }
+</script>
